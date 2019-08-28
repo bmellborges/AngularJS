@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './pages/nav/nav.component';
 import { AddUsuarioComponent } from './pages/add-usuario/add-usuario.component';
 
+import { FormsModule } from "@angular/forms"
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { AddUsuarioComponent } from './pages/add-usuario/add-usuario.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
