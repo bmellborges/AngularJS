@@ -8,5 +8,9 @@ import { Usuario } from './model/usuario';
 })
 export class AppComponent {
   title = 'lojaAngular';
-  usuarios: Array<Usuario>;
+
+  // usuarios: Array<Usuario> = [
+  //   { uid: "1", nome: "Ana", email: "ana@email.com", pws: "111111" },
+  //   { uid: "2", nome: "Pedro", email: "pedro@email.com", pws: "222222" },
+  // ];
 }
