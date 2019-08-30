@@ -27,7 +27,7 @@ export class AddUsuarioComponent implements OnInit {
     this.usuario = new Usuario;
     console.log(this.usuario, this.usuarioService.usuarios);
     form.reset();
-    this.router.navigate(["/"]);
+   //this.router.navigate(["/"]);
   }
 
 }
