@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 import { Usuario } from '../model/usuario';
+import { environment } from '../../environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -11,10 +14,15 @@ export class UsuarioService {
     { uid: "2", nome: "Pedro", email: "pedro@email.com", pws: "222222" },
   ];
 
-  constructor() { }
+  protected db = environment.serverAPI;
 
-  save(usuario:Usuario){
-    this.usuarios.push(usuario);
+  constructor(
+    protected http: HttpClient
+  ) { }
+
+  save(usuario: Usuario) {
+    //this.usuarios.push(usuario);
+    this.http.post(this.db + "usuario", usuario);
   }
-  
+
 }
