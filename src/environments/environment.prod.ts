@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  serverAPI:"http://my-json-server.typicode.com/fmoreirati/bancosJson/"
 };

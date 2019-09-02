@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './pages/nav/nav.component';
 import { AddUsuarioComponent } from './pages/add-usuario/add-usuario.component';
 
-import { FormsModule } from "@angular/forms"
+import { FormsModule } from "@angular/forms";
+import { ListUsuarioComponent } from './pages/list-usuario/list-usuario.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    AddUsuarioComponent
+    AddUsuarioComponent,
+    ListUsuarioComponent
   ],
   imports: [
     BrowserModule,
