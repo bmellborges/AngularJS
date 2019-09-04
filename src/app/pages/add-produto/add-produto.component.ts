@@ -1,23 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Usuario } from '../../model/usuario';
-import { UsuarioService } from '../../services/usuario.service';
-import { Router } from "@angular/router";
 
-//https://sweetalert2.github.io/#download - Dados do alerta com estilo
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from "@angular/router";
 import Swal from 'sweetalert2';
+import { Produto } from 'src/app/model/produto';
+import { ProdutoService } from 'src/app/services/produto.service';
 
 @Component({
-  selector: 'app-add-usuario',
-  templateUrl: './add-usuario.component.html',
-  styleUrls: ['./add-usuario.component.css']
+  selector: 'app-add-produto',
+  templateUrl: './add-produto.component.html',
+  styleUrls: ['./add-produto.component.css']
 })
-export class AddUsuarioComponent implements OnInit {
-
-  protected usuario: Usuario = new Usuario;
-  // @Input() usuarios:Usuario[] = []
+export class AddProdutoComponent implements OnInit {
+protected produto: Produto = new Produto
 
   constructor(
-    public usuarioService: UsuarioService,
+    public produtoService: ProdutoService,
     protected router: Router,
   ) { }
 
@@ -27,10 +24,10 @@ export class AddUsuarioComponent implements OnInit {
   onsubmit(form) {
     console.log(form);
     try {
-      this.usuarioService.save(this.usuario).subscribe(
+      this.produtoService.save(this.produto).subscribe(
         res => {
           console.log(res);
-          this.usuario = new Usuario;
+          this.produto = new Produto;
           form.reset();
           this.router.navigate(["/"]);
           Swal.fire("Cadastrado!")
@@ -40,7 +37,7 @@ export class AddUsuarioComponent implements OnInit {
           Swal.fire({
             type: 'error',
             title: 'Oops...',
-            text: 'Erro ao cadastrar o usuario!\nVerifique os dados!',
+            text: 'Erro ao cadastrar o produto!\nVerifique os dados!',
           })
         }
       )

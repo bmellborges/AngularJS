@@ -23,6 +23,28 @@
       "email": "md@email.com",
       "pws": "1111111",
       "id": 4
+    },
+    {
+      "nome": "Carlos da Silva",
+      "email": "cs@email.com",
+      "pws": "111111",
+      "id": 5
+    },
+    {
+      "nome": "Ana Maria",
+      "email": "anamaria@email.com",
+      "pws": "222222",
+      "id": 6
+    }
+  ],
+  "produtos": [
+    {
+      "ativo": true,
+      "nome": "Ai fone X10",
+      "descricao": "Telefone de ultima geração com 4Gb de RAM e 128GB de Armazenamento.",
+      "quant": 12,
+      "valor": 1234,
+      "id": 1
     }
   ]
 }
