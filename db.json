@@ -38,13 +38,6 @@
     }
   ],
   "produtos": [
-    {
-      "ativo": true,
-      "nome": "Ai fone X10",
-      "descricao": "Telefone de ultima geração com 4Gb de RAM e 128GB de Armazenamento.",
-      "quant": 12,
-      "valor": 1234,
-      "id": 1
-    }
+    {"id":0}
   ]
 }
