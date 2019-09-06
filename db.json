@@ -35,9 +35,37 @@
       "email": "anamaria@email.com",
       "pws": "222222",
       "id": 6
+    },
+    {
+      "endereco": {
+        "cep": "324234324324",
+        "logradouro": "3333",
+        "bairro": "333",
+        "localidade": "333",
+        "uf": "333"
+      },
+      "nome": "aaaaa",
+      "email": "3333",
+      "pws": "2222222",
+      "id": 7
+    },
+    {
+      "endereco": {
+        "cep": "324234324324",
+        "logradouro": "3333",
+        "bairro": "333",
+        "localidade": "333",
+        "uf": "333"
+      },
+      "nome": "aaaaa",
+      "email": "3333",
+      "pws": "2222222",
+      "id": 8
     }
   ],
   "produtos": [
-    {"id":0}
+    {
+      "id": 0
+    }
   ]
 }
