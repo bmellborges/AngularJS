@@ -12,7 +12,8 @@ import { AddProdutoComponent } from './pages/add-produto/add-produto.component';
 import { ListProdutoComponent } from './pages/list-produto/list-produto.component';
 import { PageHeaderComponent } from './pages/page-header/page-header.component';
 import { PageFooterComponent } from './pages/page-footer/page-footer.component';
-import { PageNavComponent } from './pages/page-nav/page-nav.component'
+import { PageNavComponent } from './pages/page-nav/page-nav.component';
+import { EnderecoComponent } from './pages/add-endereco/endereco.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PageNavComponent } from './pages/page-nav/page-nav.component'
     ListProdutoComponent,
     PageHeaderComponent,
     PageFooterComponent,
-    PageNavComponent
+    PageNavComponent,
+    EnderecoComponent
   ],
   imports: [
     BrowserModule,
