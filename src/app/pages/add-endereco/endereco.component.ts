@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Endereco } from 'src/app/model/endereco';
 import { EnderecoService } from 'src/app/services/endereco.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-endereco',
@@ -9,16 +10,40 @@ import { EnderecoService } from 'src/app/services/endereco.service';
 })
 export class EnderecoComponent implements OnInit {
 
-  @Input() public endereco: Endereco = new Endereco;
+  @Input() public endereco: Endereco;
+  public cep:string;
 
   constructor(
-    protected enderecoService:EnderecoService
+    protected enderecoService: EnderecoService
   ) { }
 
   ngOnInit() {
   }
 
-  buscaCEP(){
-    this.endereco = this.enderecoService.getEndereco(this.endereco.cep);
+  buscaCEP(event) {
+    this.cep = event.target.value;
+    console.log(this.cep);
+    if (this.cep.length > 7) {
+      this.enderecoService.getEndereco(this.cep)
+        .subscribe(
+          res => {
+            if (!res.erro) {
+              //this.endereco = new Endereco;
+              console.log("Cep não localizado! ", res);
+              Swal.fire("Cep não localizado! ");
+            } else {
+              this.endereco = new Endereco;
+              this.endereco = res;
+              console.log(res);
+            }
+          },
+          err => {
+            //this.endereco = new Endereco;
+            console.log("Cep invalido! ", err);
+            Swal.fire("Cep invalido! ");
+          }
+        )
+    }
+    console.log(this.endereco);
   }
 }
