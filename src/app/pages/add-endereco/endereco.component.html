@@ -1,7 +1,7 @@
 <div class="form-group">
     <label for=""></label>
-    <input type="text" class="form-control" placeholder="CEP" [(ngModel)]="endereco.cep" name="cep" required>
-    <small class="form-text text-muted"></small>
+    <input type="text" class="form-control" placeholder="CEP" [(ngModel)]="endereco.cep" name="cep" required maxlength="9">
+    <small class="form-text text-danger" (click)="buscaCEP()">Buscar CEP</small>
 </div>
 
 <div class="form-group">
