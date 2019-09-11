@@ -13,156 +13,22 @@
       "pws": "222222"
     },
     {
-      "nome": "João Mello",
-      "email": "jm@email.com",
-      "pws": "1111111",
-      "id": 3
-    },
-    {
-      "nome": "Maria das Dores",
-      "email": "md@email.com",
-      "pws": "1111111",
-      "id": 4
-    },
-    {
-      "nome": "Carlos da Silva",
-      "email": "cs@email.com",
-      "pws": "111111",
-      "id": 5
-    },
-    {
-      "nome": "Ana Maria",
-      "email": "anamaria@email.com",
-      "pws": "222222",
-      "id": 6
-    },
-    {
-      "endereco": {
-        "cep": "324234324324",
-        "logradouro": "3333",
-        "bairro": "333",
-        "localidade": "333",
-        "uf": "333"
-      },
-      "nome": "aaaaa",
-      "email": "3333",
-      "pws": "2222222",
-      "id": 7
-    },
-    {
-      "endereco": {
-        "cep": "324234324324",
-        "logradouro": "3333",
-        "bairro": "333",
-        "localidade": "333",
-        "uf": "333"
-      },
-      "nome": "aaaaa",
-      "email": "3333",
-      "pws": "2222222",
-      "id": 8
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "nome": "Ana Maria",
-      "email": "ana@email.com",
-      "pws": "111111",
-      "id": 9
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "nome": "mario brox",
-      "email": "mario@email.com",
-      "pws": "2222222",
-      "id": 10
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "nome": "Paulo",
-      "email": "paulo@email.com",
-      "pws": "1111111",
-      "id": 11
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "email": "sdfsdf",
-      "pws": "111111",
-      "nome": "111111",
-      "id": 12
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "pws": "111111",
-      "nome": "2222",
-      "email": "222222",
-      "id": 13
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "nome": "Fabiano",
-      "email": "f@email.com",
-      "pws": "111111",
-      "id": 14
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "nome": "fabiano",
-      "email": "fff",
-      "pws": "111111",
-      "id": 15
-    },
-    {
-      "endereco": {
-        "erro": false
-      },
-      "nome": "23520120",
-      "email": "132",
-      "pws": "1111111",
-      "id": 16
-    },
-    {
       "endereco": {
         "erro": false,
-        "cep": "23520120"
+        "cep": "23520-120",
+        "logradouro": "Rua Antenor",
+        "bairro": "Santa Cruz",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ",
+        "unidade": "",
+        "gia": "",
+        "ibge": "3304557",
+        "complemento": ""
       },
-      "nome": "aaaa",
+      "nome": "aaaaa",
       "email": "aaaaa",
-      "pws": "aaaaaa",
-      "id": 17
-    },
-    {
-      "endereco": {
-        "erro": false,
-        "cep": "23520110"
-      },
-      "nome": "aaa",
-      "email": "aaaa",
-      "pws": "aaaaaa",
-      "id": 18
-    },
-    {
-      "endereco": {
-        "erro": false,
-        "cep": "23520120"
-      },
-      "nome": "adsad",
-      "email": "asdasd",
       "pws": "111111",
-      "id": 19
+      "id": 3
     }
   ],
   "produtos": [

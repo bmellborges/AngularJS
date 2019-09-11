@@ -31,9 +31,8 @@ export class EnderecoComponent implements OnInit {
               console.log("Cep não localizado! ", res);
               Swal.fire("Cep não localizado! ");
             } else {
-              this.endereco = new Endereco;
               this.endereco.cep = res.cep;
-              this.endereco.localidade = res.logradouro;
+              this.endereco.logradouro = res.logradouro;
               this.endereco.bairro = res.bairro;
               this.endereco.localidade = res.localidade;
               this.endereco.uf = res.uf;
