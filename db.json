@@ -4,13 +4,37 @@
       "id": 1,
       "nome": "Ana",
       "email": "ana@email.com",
-      "pws": "111111"
+      "pws": "111111",
+      "endereco": {
+        "erro": false,
+        "cep": "23520-120",
+        "logradouro": "Rua Antenor",
+        "bairro": "Santa Cruz",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ",
+        "unidade": "",
+        "gia": "",
+        "ibge": "3304557",
+        "complemento": ""
+      }
     },
     {
       "id": 2,
       "nome": "Pedro",
       "email": "pedro@email.com",
-      "pws": "222222"
+      "pws": "222222",
+      "endereco": {
+        "erro": false,
+        "cep": "23520-120",
+        "logradouro": "Rua Antenor",
+        "bairro": "Santa Cruz",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ",
+        "unidade": "",
+        "gia": "",
+        "ibge": "3304557",
+        "complemento": ""
+      }
     },
     {
       "endereco": {
@@ -29,6 +53,24 @@
       "email": "aaaaa",
       "pws": "111111",
       "id": 3
+    },
+    {
+      "endereco": {
+        "erro": false,
+        "cep": "23520-100",
+        "logradouro": "Rua Antônio Pinto Menezes",
+        "bairro": "Santa Cruz",
+        "localidade": "Rio de Janeiro",
+        "uf": "RJ",
+        "unidade": "",
+        "gia": "",
+        "ibge": "3304557",
+        "complemento": ""
+      },
+      "nome": "bbbb",
+      "email": "bbb",
+      "pws": "111111",
+      "id": 4
     }
   ],
   "produtos": [
