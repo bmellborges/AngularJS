@@ -11,7 +11,7 @@ import Swal from 'sweetalert2';
 export class EnderecoComponent implements OnInit {
 
   @Input() public endereco: Endereco;
-  public cep:string;
+  public cep: string;
 
   constructor(
     protected enderecoService: EnderecoService
@@ -27,23 +27,29 @@ export class EnderecoComponent implements OnInit {
       this.enderecoService.getEndereco(this.cep)
         .subscribe(
           res => {
-            if (!res.erro) {
-              //this.endereco = new Endereco;
+            if (res.erro) {
               console.log("Cep não localizado! ", res);
               Swal.fire("Cep não localizado! ");
             } else {
               this.endereco = new Endereco;
-              this.endereco = res;
-              console.log(res);
+              this.endereco.cep = res.cep;
+              this.endereco.localidade = res.logradouro;
+              this.endereco.bairro = res.bairro;
+              this.endereco.localidade = res.localidade;
+              this.endereco.uf = res.uf;
+              this.endereco.unidade = res.unidade;
+              this.endereco.gia = res.gia;
+              this.endereco.ibge = res.ibge;
+              this.endereco.complemento = res.complemento;
+              console.log(this.endereco);
             }
           },
           err => {
-            //this.endereco = new Endereco;
+            this.endereco = new Endereco;
             console.log("Cep invalido! ", err);
             Swal.fire("Cep invalido! ");
           }
         )
     }
-    console.log(this.endereco);
   }
 }
