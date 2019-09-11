@@ -5,7 +5,15 @@
 export const environment = {
   production: false,
   serverAPI:"http://localhost:3000/",
-  serverViaCEP:"viacep.com.br/ws/cep/json/"
+  firebaseConfig: {
+    apiKey: "AIzaSyAK9YQGtF8TOmJvyOuJJEOtTfSCknmNcDg",
+    authDomain: "loja-angularbs.firebaseapp.com",
+    databaseURL: "https://loja-angularbs.firebaseio.com",
+    projectId: "loja-angularbs",
+    storageBucket: "",
+    messagingSenderId: "960253392202",
+    appId: "1:960253392202:web:b604e60c9e0a9b04ed7db3"
+  }
 };
 
 /*

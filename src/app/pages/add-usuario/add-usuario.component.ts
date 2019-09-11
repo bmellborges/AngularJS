@@ -26,7 +26,7 @@ export class AddUsuarioComponent implements OnInit {
   onsubmit(form) {
     console.log(form);
     try {
-      this.usuarioService.save(this.usuario).subscribe(
+      this.usuarioService.save(this.usuario).then(
         res => {
           console.log(res);
           this.usuario = new Usuario;

@@ -9,9 +9,11 @@
             <th> Bairro </th>
             <th> Cidade </th>
             <th> UF </th>
+            <th> / </th>
+            <th> X </th>
         </tr>
         <tr *ngFor="let u of users">
-            <td>{{u.id}}</td>
+            <td>{{u.key}}</td>
             <td>{{u.nome}}</td>
             <td>{{u.email}}</td> 
             <td>{{u.endereco.cep}}</td> 
@@ -19,6 +21,8 @@
             <td>{{u.endereco.bairro}}</td> 
             <td>{{u.endereco.localidade}}</td> 
             <td>{{u.endereco.uf}}</td> 
+            <td (click) = "editar(u)">/</td> 
+            <td (click) = "apagar(u)">X</td> 
         </tr>
     </table>
 </section>
