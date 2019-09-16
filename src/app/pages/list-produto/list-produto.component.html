@@ -1,21 +1,25 @@
 <section class="container mt-2">
-    <!-- <table *ngIf="produtos | async as prods" class="table">
+     <table *ngIf="produtos | async as prods" class="table">
         <tr>
             <th> ID </th>
             <th> Nome </th>
-            <th> E-mail </th>
+            <th> Descrição </th>
+            <th> QTD </th>
+            <th> Valor </th>
         </tr>
         <tr *ngFor="let p of prods">
-            <td>{{p.id}}</td>
+            <td>{{p.key}}</td>
             <td>{{p.nome}}</td>
             <td>{{p.descricao}}</td> 
             <td>{{p.quant}}</td> 
-            <td>{{p.valor}}</td> 
+            <td>{{p.valor}}</td>
+            <td (click) = "editar(p)">/</td> 
+            <td (click) = "apagar(p)">X</td> 
         </tr>
-    </table> -->
-    <div class="row" *ngIf="produtos | async as prods">
+    </table> 
+    <!--<div class="row" *ngIf="produtos | async as prods">
         <div class="card col-3 m-1 p-0" *ngFor="let p of prods">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
+             <img src="..." class="card-img-top" alt="..."> 
             <div class="card-body">
                 <h5 class="card-title">{{p.nome}}</h5>
                 <p class="card-text">{{p.descricao}}</p>
@@ -25,4 +29,8 @@
             </div>
         </div>
     </div>
-</section>
+    <div class="form-group text-right">
+        <button type="submit" class="btn btn-primary" [disabled]="fc.invalid || pws.value != conf.value">Salvar</button>
+        <button type="reset" class="btn btn-primary ml-2" routerLink="/">Cancelar</button>
+    </div>
+</section> -->
